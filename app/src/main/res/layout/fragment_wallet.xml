@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8696FE"
+    tools:context=".WalletFragment">
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Coins Collected"
+        android:fontFamily="@font/nunitoblack"
+        android:textColor="@color/color_white"
+        android:textSize="34sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:layout_constraintTop_toTopOf="@+id/view5" />
+
+    <TextView
+        android:id="@+id/currentcoins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:drawableLeft="@drawable/ic_dollar"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/nunitoblack"
+        android:text="....."
+        android:textColor="@color/color_white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="@+id/textView14"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/textView14" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="264dp"
+        android:layout_height="214dp"
+        android:id="@+id/lottieani"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5"
+        app:layout_constraintVertical_bias="0.383"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/treasurercoin" />
+</androidx.constraintlayout.widget.ConstraintLayout>

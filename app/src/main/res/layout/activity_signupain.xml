@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#95BDFF"
+    tools:context=".SignupainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="169dp"
+        android:layout_height="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026"
+        app:srcCompat="@drawable/options" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="39dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="15dp"
+                android:fontFamily="@font/quicksandbold"
+                android:text="CREATE AN ACCOUNT"
+                android:textColor="@color/colorBlue"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/nameBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@color/colorBlue"
+                android:background="@drawable/textbox"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="20dp"
+                android:drawableTint="@color/colorBlue"
+                android:ems="10"
+                android:fontFamily="@font/nunitoblack"
+                android:hint="Full Name"
+                android:inputType="text"
+                android:padding="15dp" />
+
+            <EditText
+                android:id="@+id/emailbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/textbox"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="20dp"
+                android:drawableTint="@color/colorBlue"
+                android:ems="10"
+                android:fontFamily="@font/nunitoblack"
+                android:textColor="@color/colorBlue"
+                android:hint=" Email Address"
+                android:inputType="textEmailAddress"
+                android:padding="15dp" />
+
+            <EditText
+                android:id="@+id/passwordbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/textbox"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="20dp"
+                android:drawableTint="@color/colorBlue"
+                android:ems="10"
+                android:fontFamily="@font/nunitoblack"
+                android:textColor="@color/colorBlue"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="15dp" />
+
+            <Button
+                android:id="@+id/createnewaccoutnbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_1"
+                android:text="Submit"
+                app:backgroundTint="@color/submitbtn" />
+
+            <Button
+
+                android:id="@+id/loginbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_2"
+                android:text="Aleardy have an account"
+                app:backgroundTint="@color/loginbtn" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

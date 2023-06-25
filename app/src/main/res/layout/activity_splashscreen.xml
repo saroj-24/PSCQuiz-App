@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splashscreen">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="251dp"
+        android:layout_height="182dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.426"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/yellowquiz" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="Public Service Commission"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:fontFamily="@font/nunitoblack"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunitoblack"
+        android:text="Powered by urcoder_75"
+        android:textAllCaps="true"
+        android:textColor="@color/colorBlue"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView"
+        app:layout_constraintVertical_bias="0.846" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/nunitoblack"
+        app:layout_constraintBottom_toTopOf="@+id/lottieAnimationView"
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintVertical_bias="0.129" />
+
+    <TextView
+        android:id="@+id/boostext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Boost Yourself"
+        android:fontFamily="@font/nunitoblack"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/lottieAnimationView"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/lottieAnimationView"
+        app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ShowProfileFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileimage"
+        android:layout_width="85dp"
+        android:layout_height="90dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="151dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="174dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/avatar"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/demoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileimage"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/nunitoregular"
+        android:gravity="center"
+        android:text="Name :"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileimage"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/demoName"
+        android:fontFamily="@font/nunitoregular"
+        android:gravity="center"
+        android:text="......................."
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+
+    <TextView
+        android:id="@+id/emaildemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/demoName"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/nunitoregular"
+        android:gravity="center"
+        android:text="Email :"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/profileemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileName"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/demoName"
+        android:fontFamily="@font/nunitoregular"
+        android:gravity="center"
+        android:text="........................"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+
+    <TextView
+        android:id="@+id/coinsdemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emaildemo"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/nunitoregular"
+        android:gravity="center"
+        android:text="Coins :"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/profilecoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileemail"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/demoName"
+        android:drawableRight="@drawable/ic_dollar"
+        android:drawablePadding="11dp"
+        android:fontFamily="@font/nunitoregular"
+        android:gravity="center"
+        android:text="..."
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+
+    <Button
+        android:id="@+id/updateprofilebutton"
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/coinsdemo"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="55dp"
+        android:backgroundTint="@color/colorBlue"
+        android:fontFamily="@font/nunitoregular"
+        android:padding="8dp"
+        android:text="Update Profile"
+        android:textSize="19dp" />
+
+    <Button
+        android:id="@+id/signoutprofilebutton"
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/updateprofilebutton"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/nunitoregular"
+        android:text="Logout"
+        android:backgroundTint="@color/colorBlue"
+        android:padding="8dp"
+        android:textSize="19dp" />
+
+
+
+</RelativeLayout>
